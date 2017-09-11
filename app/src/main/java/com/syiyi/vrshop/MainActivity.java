@@ -1,5 +1,6 @@
 package com.syiyi.vrshop;
 
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +18,7 @@ import com.google.vr.sdk.widgets.pano.VrPanoramaView;
 import com.syiyi.vrshop.vr.Scene;
 import com.syiyi.vrshop.vr.VRObject;
 import com.syiyi.vrshop.vr.VRPath;
+
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private float mRateY;
     private VRPath mCurrentPath;
     private ImageView mGoNext;
+    private Bitmap mBitmap;
     private DataManager mDataManager = new DataManager();
 
 
@@ -136,7 +139,12 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
 
-            mPanoramaView.loadImageFromBitmap(BitmapFactory.decodeStream(istr), panoOptions);
+            if (mBitmap != null && !mBitmap.isRecycled()) {
+                mBitmap.recycle();
+            }
+            
+            mBitmap = BitmapFactory.decodeStream(istr);
+            mPanoramaView.loadImageFromBitmap(mBitmap, panoOptions);
             mRoateManager.start();
             try {
                 istr.close();
