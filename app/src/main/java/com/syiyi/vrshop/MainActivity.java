@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, object.getName(), Toast.LENGTH_SHORT).show();
 
                 }
-                Toast.makeText(MainActivity.this, "点击的位置x:" + MainActivity.this.mRateX + "mRateY:" + MainActivity.this.mRateY, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, "点击的位置x:" + MainActivity.this.mRateX + "mRateY:" + MainActivity.this.mRateY, Toast.LENGTH_SHORT).show();
             }
         });
         if (mImageLoaderTask != null) {
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
             if (mBitmap != null && !mBitmap.isRecycled()) {
                 mBitmap.recycle();
             }
-            
+
             mBitmap = BitmapFactory.decodeStream(istr);
             mPanoramaView.loadImageFromBitmap(mBitmap, panoOptions);
             mRoateManager.start();
