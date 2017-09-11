@@ -1,4 +1,4 @@
-package com.syiyi.vrshop.vrshop.vr;
+package com.syiyi.vrshop.vr;
 
 import android.graphics.RectF;
 

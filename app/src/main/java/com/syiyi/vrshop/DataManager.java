@@ -1,8 +1,8 @@
-package com.syiyi.vrshop.vrshop;
+package com.syiyi.vrshop;
 
 import android.graphics.RectF;
-import com.syiyi.vrshop.vrshop.vr.Scene;
-import com.syiyi.vrshop.vrshop.vr.VRPath;
+import com.syiyi.vrshop.vr.Scene;
+import com.syiyi.vrshop.vr.VRPath;
 
 
 /**

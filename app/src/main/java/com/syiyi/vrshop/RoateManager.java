@@ -1,4 +1,4 @@
-package com.syiyi.vrshop.vrshop;
+package com.syiyi.vrshop;
 
 import android.app.Activity;
 import android.hardware.Sensor;

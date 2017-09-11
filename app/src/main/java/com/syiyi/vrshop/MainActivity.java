@@ -1,7 +1,6 @@
-package com.syiyi.vrshop.vrshop;
+package com.syiyi.vrshop;
 
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,9 +14,9 @@ import android.widget.Toast;
 
 import com.google.vr.sdk.widgets.pano.VrPanoramaEventListener;
 import com.google.vr.sdk.widgets.pano.VrPanoramaView;
-import com.syiyi.vrshop.vrshop.vr.Scene;
-import com.syiyi.vrshop.vrshop.vr.VRObject;
-import com.syiyi.vrshop.vrshop.vr.VRPath;
+import com.syiyi.vrshop.vr.Scene;
+import com.syiyi.vrshop.vr.VRObject;
+import com.syiyi.vrshop.vr.VRPath;
 import java.io.IOException;
 import java.io.InputStream;
 
